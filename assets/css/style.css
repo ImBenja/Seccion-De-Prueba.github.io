@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /* Colores Primarios */
+
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+
+  /* Colores Neutrales */
+
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  padding: 2rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 2rem;
+}
+
+.Container-Title {
+  text-align: center;
+}
+
+.Container-Title .title {
+  color: var(--Very-Dark-Magenta);
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.Container-Title .sub-title {
+  color: var(--Dark-Grayish-Magenta);
+  font-size: 1.5rem;
+}
+
+.Valoracion {
+  background: var(--Light-Grayish-Magenta);
+  border-radius: 5px;
+  padding: 1.5rem;
+  margin-top: 20px;
+}
+
+.Valoracion .Stars {
+  display: flex;
+  justify-content: center;
+  height: 20px;
+}
+
+.Valoracion .Text-Val {
+  color: var(--Very-Dark-Magenta);
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.Container-Persons {
+  background-color: var(--Very-Dark-Magenta);
+  border-radius: 10px;
+  padding: 2.2rem 1.7rem;
+  margin-top: 2rem;
+}
+
+.Icono-Name-Veri {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.Icono {
+  height: 65px;
+  border-radius: 50%;
+}
+
+.Person {
+  display: grid;
+}
+
+.Person .Name {
+  color: var(--White);
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.Person .Buyer {
+  color: var(--Soft-Pink);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.Calificacion {
+  color: var(--White);
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+
+@media (min-width: 1024px) {
+  header {
+    flex-direction: row;
+    align-items: center;
+    gap: 7rem;
+  }
+
+  .Container-Title {
+    text-align: left;
+    width: 35%;
+  }
+
+  .Container-Title .title {
+    margin-right: 2rem;
+  }
+
+  .Container-Title .sub-title {
+    font-size: 1rem;
+  }
+
+  .Container-Val {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Valoracion {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    height: 4rem;
+  }
+
+  .Valoracion:nth-of-type(2) {
+    margin-left: 40px;
+  }
+
+  .Valoracion:nth-of-type(3) {
+    margin-left: 80px;
+  }
+
+  .Text-Val {
+    text-align: left;
+  }
+
+  main {
+    flex-direction: row;
+    padding: 0 6rem;
+    gap: 30px;
+    margin-top: 3rem;
+  }
+
+  .Container-Persons {
+    height: 16rem;
+  }
+
+  .Container-Persons:nth-of-type(2) {
+    margin-top: 60px;
+  }
+
+  .Container-Persons:nth-of-type(3) {
+    margin-top: 100px;
+  }
+}
